@@ -1,0 +1,103 @@
+.navigation--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #181818;
+  color: #ffffff;
+  padding: 20px 60px;
+  height: 70px;
+
+  img {
+    cursor: pointer;
+  }
+
+  &_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      margin-right: 24px;
+
+      span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 10px;
+      }
+
+      .line {
+        border-right: 1px solid #ffffff;
+        height: 8px;
+        width: 16px;
+      }
+    }
+
+    .link--container {
+      a {
+        font-weight: 400 !important;
+        font-size: 16px;
+
+        cursor: pointer;
+
+        margin-right: 40px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .dropdown--container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      padding: 12px 16px;
+      border: 1px solid #52525b;
+      border-radius: 2px;
+
+      span {
+        margin: 0 10px;
+      }
+    }
+    .control-user--container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .profile-picture--container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        img:first-child {
+          margin-right: 5px;
+        }
+
+        margin: 0 20px;
+      }
+    }
+  }
+}
