@@ -1,5 +1,3 @@
-'use-client';
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -23,7 +21,7 @@ const Navigation: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           <Image
             src={darkMode ? DicodingLogoDark : DicodingLogoLight}
             alt={'Logo Dicoding'}
-            priority={true}
+            priority
           />
           <span>Jobs</span>
           <div className="line"></div>
@@ -37,25 +35,32 @@ const Navigation: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
       <div className="navigation--container_right">
         <div className="dropdown--container">
-          <Image src={CooperLogo} alt="Logo Koper" />
+          <Image src={CooperLogo} alt="Logo Koper" priority />
           <span>Siap untuk di-interview</span>
           <Image
             src={darkMode ? DownLogoDark : DownLogoLight}
             alt="Logo Anak Panah Turun"
+            priority
           />
         </div>
 
         <div className="control-user--container">
           <div className="profile-picture--container">
-            <Image src={ProfilePictureDummyLogo} alt="Logo Profile Picture" />
+            <Image
+              src={ProfilePictureDummyLogo}
+              alt="Logo Profile Picture"
+              priority
+            />
             <Image
               src={darkMode ? DownLogoDark : DownLogoLight}
               alt="Logo Anak Panah Turun"
+              priority
             />
           </div>
           <Image
             src={darkMode ? NotificationLogoDark : NotificationLogoLight}
             alt="Logo Notifikasi"
+            priority
           />
         </div>
       </div>
