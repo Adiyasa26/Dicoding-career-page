@@ -31,13 +31,12 @@
 
   .header--decorator {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 262px;
 
     .parent-decoration {
       position: relative;
       margin-left: auto;
-      max-width: 800px;
       height: 100%;
 
       img {
@@ -52,8 +51,8 @@
       img {
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translate(-5%, 40%);
+        left: 50%;
+        transform: translate(-50%, 40%);
         border-radius: 32px;
       }
     }
