@@ -11,7 +11,7 @@ const JobListLayout: React.FC<{
   darkMode: boolean;
 }> = ({ children }) => {
   return (
-    <div className={Style.container}>
+    <div className={Style.body}>
       <Navigation darkMode={true} />
       <DarkHeader />
       {children}
