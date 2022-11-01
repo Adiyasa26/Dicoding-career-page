@@ -1,0 +1,24 @@
+.search-bar--container {
+  position: relative;
+  width: 350px;
+
+  i {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+  }
+
+  .search {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    color: #52525b;
+
+    width: 100%;
+    padding: 18px 24px 18px 58px;
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    border-radius: 4px;
+  }
+}
