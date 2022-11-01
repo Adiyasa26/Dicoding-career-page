@@ -18,9 +18,9 @@ const DarkHeader: React.FC = () => {
 
       <div className="header--decorator">
         <div className="parent-decoration">
-          <Image src={ArrowDecoration} alt="Arrow Decoration" />
+          <Image src={ArrowDecoration} alt="Arrow Decoration" priority />
           <div className="child-decoration">
-            <Image src={ImageDecoration} alt="Image Decoration" />
+            <Image src={ImageDecoration} alt="Image Decoration" priority />
           </div>
         </div>
       </div>
