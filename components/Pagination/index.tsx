@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -9,13 +10,11 @@ import './style.scss';
 const Pagination: React.FC<{ pages: any[] }> = ({ pages }) => {
   const currentPage: any[] = [];
 
-  // TODO Next13 cannot warp up client component inside server component so the pagination doesn't work
-  // const handleClick = (event: any) => {
-  //   currentPage.splice(0, pages.length);
-  //   currentPage.push(pages[event.selected]);
-  // };
-
-  console.log(currentPage);
+  const handleClick = (event: any) => {
+    currentPage.splice(0, pages.length);
+    currentPage.push(event);
+    console.log(currentPage);
+  };
   return (
     <div className="page-for-paginate--container">
       <div className="pagination">
@@ -26,6 +25,7 @@ const Pagination: React.FC<{ pages: any[] }> = ({ pages }) => {
           <div
             key={pages.indexOf(page) + 1}
             className={`pagination-item paginate-${pages.indexOf(page) + 1}`}
+            onClick={handleClick.bind(null, page)}
           >
             {pages.indexOf(page) + 1}
           </div>
