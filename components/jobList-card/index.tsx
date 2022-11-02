@@ -9,7 +9,7 @@ import CooperLogo from '../../assets/image/experience.png';
 import './style.scss';
 
 interface Props {
-  id: number;
+  id: string;
   image: string;
   title: string;
   companyName: string;
