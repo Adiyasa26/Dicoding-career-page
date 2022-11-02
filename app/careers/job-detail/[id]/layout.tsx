@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Navigation from '../../../components/navigation-bar';
+import Navigation from '../../../../components/navigation-bar';
 
-import '../../globals.css';
+import '../../../globals.css';
 
 const JobDetailLayout: React.FC<{
   children: React.ReactNode;
