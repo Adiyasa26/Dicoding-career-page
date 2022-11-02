@@ -18,6 +18,7 @@ interface Props {
   experience: boolean;
   createdAt: string;
   closedAt: string;
+  skills: string;
 }
 
 export const dateParser = (date: string) => {
@@ -53,6 +54,7 @@ const JobListCard: React.FC<Props> = (props: Props) => {
     experience,
     createdAt,
     closedAt,
+    skills,
   } = props;
 
   return (
@@ -87,6 +89,7 @@ const JobListCard: React.FC<Props> = (props: Props) => {
       <div className="job-list-card--container_right">
         <p>Dibuat pada {dateParser(createdAt)}</p>
         <p>Lamar sebelum {dateParser(closedAt)}</p>
+        <p>{skills}</p>
       </div>
     </Link>
   );
