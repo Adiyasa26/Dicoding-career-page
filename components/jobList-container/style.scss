@@ -12,67 +12,70 @@
       font-weight: 600;
       color: #18181b;
     }
-    .pagination {
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
-      list-style: none;
-      margin: 0;
-      margin-top: 24px;
-
-      .page-item {
-        text-decoration: none;
+    .card--container {
+      .pagination {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        height: 32px;
-        width: 32px;
-        border: 1px solid #e4e4e7;
+        list-style: none;
+        margin: 0;
+        margin-top: 24px;
 
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: -0.011em;
-        color: #18181b;
-
-        cursor: pointer;
-
-        &:hover {
-          background-color: #e4e4e7;
-        }
-
-        &:first-child {
-          font-size: 14px;
-          font-weight: 700;
-          border-radius: 4px 0 0 4px;
-        }
-
-        &:last-child {
-          font-size: 14px;
-          font-weight: 700;
-          border-radius: 0 4px 4px 0;
-        }
-
-        &.active {
-          background-color: #2d3e50;
-          border: 1px solid #2d3e50;
-          color: #ffffff;
-        }
-
-        &.disabled {
-          background-color: #c9c9c9;
-          pointer-events: none;
-          border: none;
-        }
-
-        .page-link {
+        .page-item {
+          text-decoration: none;
           display: flex;
           align-items: center;
           justify-content: center;
+
           height: 32px;
           width: 32px;
+          border: 1px solid #e4e4e7;
+
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: -0.011em;
+          color: #18181b;
+
+          cursor: pointer;
+
+          &:hover {
+            background-color: #e4e4e7;
+          }
+
+          &:first-child {
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 4px 0 0 4px;
+          }
+
+          &:last-child {
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 0 4px 4px 0;
+          }
+
+          &.active {
+            background-color: #2d3e50;
+            border: 1px solid #2d3e50;
+            color: #ffffff;
+          }
+
+          &.disabled {
+            background-color: #c9c9c9;
+            pointer-events: none;
+            border: none;
+          }
+
+          .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            width: 32px;
+          }
         }
       }
     }
