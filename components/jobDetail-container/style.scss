@@ -1,4 +1,118 @@
 .job-detail--container {
   display: flex;
   flex-direction: column;
+
+  .border-bottom {
+    margin-top: 165px;
+    border-bottom: 2px solid #e4e4e7;
+  }
+
+  &_header-section {
+    padding-inline: 120px;
+    border-bottom: 1px solid #e4e4e7;
+  }
+
+  &_main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-inline: 300px;
+
+    &--header {
+      margin-top: 32px;
+
+      .job-type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        width: 95px;
+
+        background: #eff6ff;
+        border: 1px solid #60a5fa;
+        border-radius: 32px;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: -0.006em;
+        color: #3b82f6;
+      }
+    }
+
+    &--main {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.017em;
+        color: #18181b;
+        margin: 0 0 8px 0;
+      }
+
+      p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.011em;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 25px;
+        list-style-position: outside;
+        list-style-type: disc;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.011em;
+        color: #18181b;
+      }
+
+      .sub-unordered-list {
+        padding-left: 30px;
+      }
+
+      &_about {
+        h1 {
+          color: #3f3f46 !important;
+        }
+
+        p {
+          text-align: justify;
+          color: #3f3f46;
+        }
+      }
+
+      &_desc {
+        p {
+          color: #18181b;
+        }
+      }
+
+      &_tutorial {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 16px;
+        border: 1px solid #e4e4e7;
+        border-radius: 4px;
+
+        h1 {
+          color: #3f3f46 !important;
+        }
+
+        ul {
+          color: #3f3f46;
+        }
+      }
+    }
+  }
 }
