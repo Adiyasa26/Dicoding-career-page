@@ -1,5 +1,6 @@
 .job-list--container {
   display: flex;
+  border-bottom: 1px solid #e4e4e7;
 
   &_left {
     width: 730px;
@@ -22,6 +23,7 @@
         list-style: none;
         margin: 0;
         margin-top: 24px;
+        margin-bottom: 40px;
 
         .page-item {
           text-decoration: none;
